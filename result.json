@@ -1,0 +1,10 @@
+{
+  "component_summary": "\u2022 **process_data** (function)\n  \u2514\u2500 Clean and transform items.\n  \u2514\u2500 Code: `def process_data(items: list):     \"\"\"Clean and transform items.\"\"\"     result = []     for item in items:         result.append(item.upper())     ret...`\n\n\u2022 **main** (function)\n  \u2514\u2500 Main entry point.\n  \u2514\u2500 Code: `def main():     \"\"\"Main entry point.\"\"\"     loader = DataLoader(\"data.csv\")     data = loader.load()     processed = process_data(data)     print(f\"Pr...`\n\n\u2022 **DataLoader.load** (function)\n  \u2514\u2500 Simulate loading data.\n  \u2514\u2500 Code: `    def load(self):         \"\"\"Simulate loading data.\"\"\"         print(f\"Loading from {self.source}\")         return [\"item1\", \"item2\", \"item3\"]`\n\n\u2022 **DataLoader** (class)\n  \u2514\u2500 Handles loading data from files.\n  \u2514\u2500 Code: `class DataLoader:     \"\"\"Handles loading data from files.\"\"\"     def __init__(self, source: str):         self.source = source      def load(self):   ...`\n\n**\ud83d\udccc Detected Theme**: initialization, entry point, purpose",
+  "call_flow": "**\ud83d\udd04 Call Flow**:\n  \u2022 main.py::main -> data_loader.py::DataLoader (call)\n  \u2022 main.py::main -> utils.py::process_data (call)\n  \u2022 main.py::main -> data_loader.py::DataLoader.load (call)",
+  "hotspots": "**\ud83c\udfaf Key Components**:\n  \u2022 main (entry point)",
+  "sources": [
+    "main.py::main"
+  ],
+  "note": "\u2728 Offline analysis - fast and private!",
+  "provider": "Offline Analysis (Enhanced)"
+}

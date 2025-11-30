@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: codelens-qa
+Version: 0.1.0
+Summary: LLM-augmented repo explorer
+Author-email: Antigravity <antigravity@example.com>
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: networkx
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: tiktoken
+Requires-Dist: rich
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Requires-Dist: httpx>=0.24.0; extra == "test"
+Provides-Extra: local
+Requires-Dist: transformers>=4.30.0; extra == "local"
+Requires-Dist: torch>=2.0.0; extra == "local"
+Requires-Dist: accelerate>=0.20.0; extra == "local"
+Provides-Extra: huggingface
+Requires-Dist: huggingface-hub; extra == "huggingface"
+Dynamic: license-file

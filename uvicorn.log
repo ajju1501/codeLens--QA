@@ -1,0 +1,9 @@
+INFO:     Started server process [36801]
+INFO:     Waiting for application startup.
+2025-11-28 19:32:38,149 - codelens - INFO - Building dependency graph...
+2025-11-28 19:32:38,149 - codelens - INFO - Graph built: 6 nodes, 3 edges
+2025-11-28 19:32:38,149 - codelens - INFO - Indexing 6 units with TF-IDF...
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('127.0.0.1', 8001): [errno 48] address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
